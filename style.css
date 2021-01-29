@@ -16,7 +16,6 @@ body {
 .game_field {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 10px 10px;
   margin-left: auto;
   margin-right: auto;
@@ -68,16 +67,17 @@ body {
 }
 @media (max-width: 660px) {
   .game_field {
+    grid-template-columns: repeat(3, 1fr);
     width: 320px;
     gap: 5px 5px;
   }
   .front img,
   .back img {
-    width: 75px;
-    height: 75px;
+    width: 103px;
+    height: 103px;
   }
   .flip-container {
-    width: 75px;
-    height: 75px;
+    width: 103px;
+    height: 103px;
   }
 }
